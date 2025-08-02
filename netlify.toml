@@ -1,4 +1,12 @@
-/* Netlify configuration file for Vite + React app */
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+# Netlify configuration file for Vite + React app
 [build]
   command = "npm run build"
   publish = "dist"
